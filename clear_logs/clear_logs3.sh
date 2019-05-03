@@ -22,9 +22,9 @@ fi
 
 if [ -n "$1" ]
 then
-    lines=$LINES
-else
     lines=$1
+else
+    lines=$LINES
 fi
 
 tail -n $lines messages > mesg.temp
