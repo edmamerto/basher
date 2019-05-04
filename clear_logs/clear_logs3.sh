@@ -8,16 +8,16 @@ LINES=50
 
 if [ "$ROOT_UID" -ne "$UID" ]
 then
+    echo "you must be root to execute this scrit"
     exit $E_NOTROOT
-    echo "you must be root to run this script"
 fi
 
 cd $LOG_DIR
 
 if [ `pwd` != $LOG_DIR ]
 then
-    exit $E_XCD
     echo "cannot change directory"
+    exit $E_XCD
 fi
 
 if [ -n "$1" ]
