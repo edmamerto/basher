@@ -14,7 +14,7 @@ fi
     echo
     echo "Archive Description:"
     rpm -qpi $1 # Query description
-    ehco
+    echo
     echo "Archive Listing:"
     rpm -qpl $1 # Query listing
     rpm -i --test $1
