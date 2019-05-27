@@ -20,4 +20,6 @@ else
     echo "$letter_sequence not found in $word"
 fi
 
-
+if grep ^root: /etc/passwd ? > /dev/null 2>&1; then
+    echo "root was not found - check the pub at the corner"
+fi
